@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quizy wizzy</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+
+            document.querySelectorAll('button').forEach(function(button) {
+                button.onclick=function() {
+                    if (button.dataset.answer === "correct")
+                    {
+                        button.style.backgroundColor = "green";
+                        const p = document.createElement('p');
+                        p.innerHTML = ":)";
+                        button.append(p);
+                    } else {
+                        button.style.backgroundColor = "red";
+                        const p = document.createElement('p');
+                        p.innerHTML = ":("; 
+                        button.append(p);
+                    }
+                }
+            });
+
+        });
+
+
+    </script>
+</head>
+<body>
+    <div class="quiz">
+        <p>Running time of Linear Search in WCS</p>
+        <button data-answer="correct">O(n)</button>
+        <button data-answer="incorrect">O(log n)</button>
+        <button data-answer="incorrect">O(1)</button>
+        <button data-answer="incorrect">O(nlogn)</button>
+    </div>
+
+    <div class="quiz">
+        <p>How much memory is allocated to represent a boolean value in computers</p>
+        <button data-answer="incorrect">1 bit</button>
+        <button data-answer="incorrect">3 bit</button>
+        <button data-answer="correct">1 byte</button>
+        <button data-answer="incorrect">50 GB</button>
+    </div>
+
+    <div class="quiz">
+        <p>How many girlfriends have you had till now?</p>
+        <button data-answer="incorrect">1</button>
+        <button data-answer="incorrect">3</button>
+        <button data-answer="incorrect">5</button>
+        <button data-answer="correct">0</button>
+    </div>
+
+    <div class="quiz">
+        <p>Length of your peen</p>
+        <button data-answer="incorrect">6 inch </button>
+        <button data-answer="correct">innie</button>
+        <button data-answer="incorrect">3 inch </button>
+        <button data-answer="incorrect">6 1/2 inch</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    --blood: #8A0707; /*Oo...edgy*/
+    --forest: #228b22;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz {
+    padding: 10px;
+}
+
+p {
+    padding-bottom: 5px;
+}
+
+button {
+    width: 100px;
+    margin-right: 10px;
+    padding: 10px 0px;
+    box-shadow: var(--shadow);
+    border: none;
+}
