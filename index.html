@@ -11,22 +11,21 @@
         document.addEventListener('DOMContentLoaded', function() {
 
             document.querySelectorAll('button').forEach(function(button) {
+
+                var parent = button.closest('.quiz');
+                var last_child = parent.lastElementChild;
+
                 button.onclick=function() {
                     if (button.dataset.answer === "correct")
                     {
                         button.style.backgroundColor = "green";
-                        const p = document.createElement('p');
-                        p.innerHTML = ":)";
-                        button.append(p);
+                        last_child.innerHTML = "Correct :)";
                     } else {
                         button.style.backgroundColor = "red";
-                        const p = document.createElement('p');
-                        p.innerHTML = ":("; 
-                        button.append(p);
+                        last_child.innerHTML = "Incorrect :(";
                     }
                 }
             });
-
         });
 
 
@@ -39,6 +38,7 @@
         <button data-answer="incorrect">O(log n)</button>
         <button data-answer="incorrect">O(1)</button>
         <button data-answer="incorrect">O(nlogn)</button>
+        <p class="feedback"></p>
     </div>
 
     <div class="quiz">
@@ -47,6 +47,7 @@
         <button data-answer="incorrect">3 bit</button>
         <button data-answer="correct">1 byte</button>
         <button data-answer="incorrect">50 GB</button>
+        <p class="feedback"></p>
     </div>
 
     <div class="quiz">
@@ -55,6 +56,7 @@
         <button data-answer="incorrect">3</button>
         <button data-answer="incorrect">5</button>
         <button data-answer="correct">0</button>
+        <p class="feedback"></p>
     </div>
 
     <div class="quiz">
@@ -63,6 +65,8 @@
         <button data-answer="correct">innie</button>
         <button data-answer="incorrect">3 inch </button>
         <button data-answer="incorrect">6 1/2 inch</button>
+        <p class="feedback"></p>
     </div>
 </body>
 </html>
+     
