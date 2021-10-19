@@ -5,27 +5,166 @@
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
     --blood: #8A0707; /*Oo...edgy*/
     --forest: #228b22;
+    --linen:rgb(233, 220, 201);
+    --gold:rgba(255,215,0, 0.7);
+    --lilac:rgb(170, 152, 169);
+    --someshadeofblack:rgb(14, 3, 1);
+    --charcoal: rgb(54, 69, 79);
+    --vanilla: rgb(243, 229, 171);
+    --cream:rgb(255, 253, 208);
+    --pearl: rgb(226, 223, 210);
+    --smoke: rgba(132, 136, 132, 1);
+    --bonewhite:rgb(249, 246, 238);
+    --matteblack: rgb(40, 40, 43);
+    --kelly:rgb(76, 187, 23);
+    --jetblack: rgb(52, 52, 52);
 }
 
-* {
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+}   
+
+body {
+    background: var(--bonewhite);
+    color: var(--matteblack);
 }
 
-.quiz {
-    padding: 10px;
+h1 {
+    text-align: center; 
+    padding: 20px 0;
 }
 
-p {
-    padding: 5px 0px;
+#scroll-box {
+    width: 90%;
+    height: 200px;
+    overflow: auto;
+    /* background: darkgoldenrod; */
+    margin: 10px 30px;
+    border-width: 1px 0px 1px 1px;
+    border-style: solid;
+    border-color: var(--dark);
 }
 
-button {
-    width: 100px;
-    margin-right: 10px;
-    padding: 10px 0px;
-    box-shadow: var(--shadow);
+.nav-link {
+    text-decoration: none;
+    color: var(--matteblack);
+}
+
+#scroll-box p {
+    padding: 10px 20px;
+    border-bottom: 1px solid;
+}
+
+/* sections */
+.main-section {
+    padding: 20px 30px;
     border: none;
+    box-shadow: var(--shadow);
+}
+
+.main-section > header{   
+    padding-top: 15px;
+}
+
+.main-section > h3 {
+    margin-top: 20px;
+}
+
+.main-section div {
+    background-color: var(--lilac);
+    color: var(--dark);
+    padding: 10px;
+    margin-bottom: 1px;
+}
+
+.main-section > div > p {
+    margin-top: 10px;
+}
+
+.main-section > div > p > img {
+    width: 100px;
+    height: 100px;
+}
+
+.main-section > div > button{
+    width: 100px;
+    height: 30px;
+    margin-right: 20px;
+    margin-top: 10px;
+    box-shadow: var(--shadow);
+    border-radius: 3px;
+    border: none;   
+}
+
+code {
+    display: inline-block;/*becasue code is inline, width won't take effect*/
+    width: 100%;
+    font-family: 'Source Code Pro', monospace;
+    background: var(--jetblack);
+    color: green;
+    padding: 10px 50px;
+    margin-top: 20px;
+    border: none;
+    box-shadow: var(--shadow);
+}
+
+ul {
+    padding-left: 60px;
+    padding-top: 20px;
+    /* background: darkorange; */
+}
+table {
+    width: 80%;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+}
+table, td{
+    border: 1px solid white;
+}
+
+td {
+    padding: 5px 10px;
+}
+
+@media only screen and (min-width: 700px){
+    body {
+        display: flex;
+    }
+
+    header {
+        height: 10vh;
+    }
+    #navbar{
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 300px;
+        border-right: 3px solid var(--smoke);
+    }
+    #scroll-box {
+        height: 90vh;
+        margin: 0;
+        width: 100%;
+        /* border-right: solid; */
+    }
+
+    #scroll-box p {
+        padding: 20px 20px;
+        border-bottom: 1px solid;
+    }
+
+    #main-doc {
+        width: 100%;
+        margin-left: 300px;
+    }
+
+    
+
+    ul {
+        padding-left: 100px;
+    }
 }
