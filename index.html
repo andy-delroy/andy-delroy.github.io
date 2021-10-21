@@ -13,7 +13,7 @@ Please read the README below in the JS Editor before beginning. Feel free to del
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizzy Wizzy sucky titty</title>
+    <title>Quizy wizzy sucky titty</title>
     <script src="https://kit.fontawesome.com/7000b9a87e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,7 @@ Please read the README below in the JS Editor before beginning. Feel free to del
 
             document.querySelectorAll('button').forEach(function(button) {
 
-                var parent = button.closest('.quiz');
+                var parent = button.closest('div');
                 var last_child = parent.lastElementChild;
 
                 button.onclick=function() {
@@ -51,8 +51,8 @@ Please read the README below in the JS Editor before beginning. Feel free to del
     <nav id="navbar">
         <header><h1>Python Documentation</h1></header>
         <div id="scroll-box">
-            <p><a href="#Week1" class="nav-link">Week1</a></p>
-            <p><a href="#Whetting_Your_Appetite" class="nav-link">Whetting Your Appetite</a></p>
+            <p><a href="#week0" class="nav-link">Week 0</a></p>
+            <p><a href="#week1" class="nav-link">Week 1</a></p>
             <p><a href="#Hello_World" class="nav-link">Hello World</a></p>
             <p><a href="#Variables" class="nav-link">Variables</a></p>
             <p><a href="#Naming_and_Using_Variables" class="nav-link">Using Variables</a></p>
@@ -73,8 +73,8 @@ Please read the README below in the JS Editor before beginning. Feel free to del
     </nav>
     <main id="main-doc">
         <!-- contains the pages main content (technical documentation) -->
-        <section class="main-section" id="Week1">
-            <header><h2>Week1</h2></header>
+        <section class="main-section" id="week0">
+            <header><h2>Week0</h2></header>
             
             <div class="quiz">
                 <p>Running time of Linear Search in WCS</p>
@@ -104,576 +104,324 @@ Please read the README below in the JS Editor before beginning. Feel free to del
             </div>
             <div class="quiz">
                 <p>Length of your peen</p>
-                <button data-answer="incorrect">6 inch </button>
+                <button data-answer="incorrect">6 inch</button>
                 <button data-answer="correct">innie</button>
-                <button data-answer="incorrect">3 inch </button>
+                <button data-answer="incorrect">3 inch</button>
                 <button data-answer="incorrect">6 1/2 inch</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>Zeros and Ones are otherwise known as (if you don't know this by now I mean...)</p>
+                <button data-answer="incorrect">bats </button>
+                <button data-answer="incorrect">bitches </button>
+                <button data-answer="correct">bits</button>
+                <button data-answer="incorrect">butter</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>Highest decimal value you can count with 4 digits in a binary system.</p>
+                <button data-answer="incorrect">7</button>
+                <button data-answer="correct">15</button>
+                <button data-answer="incorrect">3</button>
+                <button data-answer="incorrect">10</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>Inside modern computers, there are million of tiny switches that can be turned on and off to represent different values, called _____.</p>
+                <button data-answer="incorrect">something's gotta give</button>
+                <button data-answer="incorrect">megatron</button>
+                <button data-answer="incorrect">transformers</button>
+                <button data-answer="correct">transistors</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>How many combinations you can get with 3 digits in a binary system?</p>
+                <button data-answer="correct">8</button>
+                <button data-answer="incorrect">your mom</button>
+                <button data-answer="incorrect">2</button>
+                <button data-answer="incorrect">27</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>In decimal represention of number 123 where the hell's place is 2?</p>
+                <button data-answer="incorrect">your mom's</button>
+                <button data-answer="incorrect">hundred's</button>
+                <button data-answer="correct">ten's</button>
+                <button data-answer="incorrect">thousand's</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>In a binary number like 001 what place the 0 in the middle occupy</p>
+                <button data-answer="incorrect">1/16's</button>
+                <button data-answer="correct">tow's</button>
+                <button data-answer="incorrect">four's</button>
+                <button data-answer="incorrect">one's</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>What dat A map to in ASCII?</p>
+                <button data-answer="correct">google</button>
+                <button data-answer="incorrect">69(nooice)</button>
+                <button data-answer="incorrect">66</button>
+                <button data-answer="incorrect">65</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>8 bits make up to a ____.</p>
+                <button data-answer="incorrect">1 MB</button>
+                <button data-answer="incorrect">1 pizza</button>
+                <button data-answer="correct">1 byte</button>
+                <button data-answer="incorrect">1 banana</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>Computers represent letters via a sequence of __ bits which is also one byte.</p>
+                <button data-answer="incorrect">10</button>
+                <button data-answer="incorrect">5 niggas</button>
+                <button data-answer="correct">8</button>
+                <button data-answer="incorrect">80</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>How many combos you can squeeze outta 8bits(binary)?</p>
+                <button data-answer="correct">256</button>
+                <button data-answer="incorrect">420</button>
+                <button data-answer="incorrect">255</button>
+                <button data-answer="incorrect">200</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>Other characters with accent marks and symbols are represent in a standard called ____.</p>
+                <button data-answer="incorrect">FBI</button>
+                <button data-answer="incorrect">ASCII</button>
+                <button data-answer="incorrect">ATF</button>
+                <button data-answer="correct">Unicode</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>8 bits make up to a ____.</p>
+                <button data-answer="incorrect">1 MB</button>
+                <button data-answer="incorrect">1 pizza</button>
+                <button data-answer="correct">1 byte</button>
+                <button data-answer="incorrect">1 banana</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>(R,G,B) notion is used to represent each pixel of colors in computers and each color uses 8 bits just so you know.</p>
+                <button data-answer="correct">I see</button>
+                <button data-answer="correct">ok</button>
+                <button data-answer="correct">aight</button>
+                <button data-answer="correct">Fascinating</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>Music can be represented with bits, too, with mappings of numbers to notes and durations, or more complex mappings of bits to sound frequencies at each moment of time.</p>
+                <button data-answer="correct">naruhodo</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>Other characters with accent marks and symbols are represent in a standard called ____.</p>
+                <button data-answer="incorrect">FBI</button>
+                <button data-answer="incorrect">ASCII</button>
+                <button data-answer="incorrect">ATF</button>
+                <button data-answer="correct">Unicode</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>Unlike us, computer-chan can't read betwee the lines so our algorithms needs to be ____.</p>
+                <button data-answer="correct">precise</button>
+                <button data-answer="incorrect">copied</button>
+                <button data-answer="correct">unambiguous</button>
+                <button data-answer="incorrect">pretty</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>Another must have quality of algorithms is ____.</p>
+                <button data-answer="incorrect">uniqueness</button>
+                <button data-answer="incorrect">speed</button>
+                <button data-answer="incorrect">space-efficiency</button>
+                <button data-answer="correct">efficiency</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>Start out with ____ when you trynna figure out an algorithm.</p>
+                <button data-answer="incorrect">coffee</button>
+                <button data-answer="correct">pseudo code</button>
+                <button data-answer="incorrect">despair</button>
+                <button data-answer="incorrect">invoking God</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>What this code output?</p>
+                <code>
+                    <pre>
+#include &lt;stdio.h>
+
+int main(void)
+{
+    printf("goodbye, world\n");
+}
+                    </pre>
+                </code>
+                <button data-answer="incorrect">some nonsense</button>
+                <button data-answer="incorrect">hello world</button>
+                <button data-answer="incorrect">good vibes</button>
+                <button data-answer="correct">suicide</button>
                 <p class="feedback"></p>
             </div>
             <!-- header contains text that describes the topic of that section. isnt that just topic? -->
         </section>
-        <section class="main-section" id="Whetting_Your_Appetite">
-            <header><h2>Whetting Your Appetite</h2></header>
-            <p>If you do much work on computers, eventually you find that there’s some task you’d like to automate. For example, you may wish to perform a search-and-replace over a large number of text files, or rename and rearrange a bunch of photo files in a complicated way. Perhaps you’d like to write a small custom database, or a specialized GUI application, or a simple game.</p>
-            <p>If you’re a professional software developer, you may have to work with several C/C++/Java libraries but find the usual write/compile/test/re-compile cycle is too slow. Perhaps you’re writing a test suite for such a library and find writing the testing code a tedious task. Or maybe you’ve written a program that could use an extension language, and you don’t want to design and implement a whole new language for your application.Python is just the language for you.</p>
-            <p>Python is simple to use, but it is a real programming language, offering much more structure and support for large programs than shell scripts or batch files can offer. On the other hand, Python also offers much more error checking than C, and, being a very-high-level language, it has high-level data types built in, such as flexible arrays and dictionaries.</p>
-            <p>Python enables programs to be written compactly and readably. Programs written in Python are typically much shorter than equivalent C, C++, or Java programs, for several reasons:</p>
-            <ul>
-                <li>the high-level data types allow you to express complex operations in a single statement;</li>
-                <li>statement grouping is done by indentation instead of beginning and ending brackets;</li>
-                <li>no variable or argument declarations are necessary.</li>
-            </ul>
-
-            <p>By the way, the language is named after the BBC show “Monty Python’s Flying Circus” and has nothing to do with reptiles. Making references to Monty Python skits in documentation is not only allowed, it is encouraged!</p>
-        </section>
-
-        <section class="main-section" id="Hello_World">
-            <header><h2>Hello World</h2></header>
-            <p>Before you write your first program, make a folder called python_work
-            somewhere on your system for your projects. It’s best to use lowercase
-            letters and underscores for spaces in file and folder names, because Python
-            uses these naming conventions.</p>
-
-            <p>Open Sublime Text or any other text editor, and save an empty Python file (File ▸ Save As) called hello_world.py in your python_work folder. The extension .py tellsSublime Text that the code in your file is written in Python, which tells it
-            how to run the program and highlight the text in a helpful way.</p>
-            <p>After you’ve saved your file, enter the following line in the text editor:</p>
-
-            <code>print("Hello Python world!")</code>
-        </section>
-
-        <section class="main-section" id="Variables">
-            <header><h2>Variables</h2></header>
-            <p>Let’s try using a variable in hello_world.py. Add a new line at the beginning of the file, and modify the second line:</p>
-
-            <code>
-                    message = "Hello Python world!"<br>
-                    print(message)
-            </code>
-
-            <p>Run this program to see what happens. You should see the same output you saw previously:</p>
-
-            <code>Hello Python world!</code>
-
-            <p>We’ve added a variable named message . Every variable is connected to a value, which is the information associated with that variable. In this case the value is the "Hello Python world!" text.</p>
-
-            <p>Adding a variable makes a little more work for the Python interpreter. When it processes the first line, it associates the variable message with the "Hello Python world!" text. When it reaches the second line, it prints the value associated with message to the screen.</p>
-        </section>
-
-        <section class="main-section" id="Naming_and_Using_Variables">
-            <header><h2>Naming and Using Variables</h2></header>
-            <p>When you’re using variables in Python, you need to adhere to a few rules
-            and guidelines. Breaking some of these rules will cause errors; other
-            guidelines just help you write code that’s easier to read and understand. Besure to keep the following variable rules in mind:</p>
-
-            <ul>
-                <li>Variable names can contain only letters, numbers, and underscores.
-                    They can start with a letter or an underscore, but not with a number.
-                    For instance, you can call a variable message_1 but not 1_message.</li>
-                <li>Spaces are not allowed in variable names, but underscores can be used
-                    to separate words in variable names. For example, greeting_message
-                    works, but greeting message will cause errors.</li>
-                <li>Avoid using Python keywords and function names as variable names;
-                    that is, do not use words that Python has reserved for a particular
-                    programmatic purpose, such as the word print.</li>
-                <li>Variable names should be short but descriptive. For example, name is
-                    better than n, student_name is better than s_n, and name_length is better
-                    than length_of_persons_name.</li>
-                <li>Be careful when using the lowercase letter l and the uppercase letter O
-                    because they could be confused with the numbers 1 and 0.</li>
-            </ul>
-
-            <p>It can take some practice to learn how to create good variable names,
-            especially as your programs become more interesting and complicated. As
-            you write more programs and start to read through other people’s code,
-            you’ll get better at coming up with meaningful names.</p>
-        </section>
-
-        <section class="main-section" id="Strings">
-            <header><h2>Strings</h2></header>
-            <p>Because most programs define and gather some sort of data, and then do
-            something useful with it, it helps to classify different types of data. The first
-            data type we’ll look at is the string. Strings are quite simple at first glance,
-            but you can use them in many different ways.</p>
-
-            <p>A string is a series of characters. Anything inside quotes is considered a
-            string in Python, and you can use single or double quotes around your
-            strings like this:</p>
-
-            <code>
-                    "This is a string."<br>
-                    'This is also a string.'
-            </code>
-
-            <h3>Changing Case in a String with Methods</h3>
-
-            <p>One of the simplest tasks you can do with strings is change the case of the
-            words in a string. Look at the following code, and try to determine what’s
-            happening:</p>
-            
-            <code>
-                    name = "ada lovelace"<br>
-                    print(name.title())
-            </code>
-
-            <p>Save this file as name.py, and then run it. You should see this output:</p>
-
-            <code>Ada Lovelace</code>
-
-            <p>In this example, the variable name refers to the lowercase string "ada
-            lovelace" . The method title() appears after the variable in the print() call. A
-            method is an action that Python can perform on a piece of data. The dot ( . )
-            after name in name.title() tells Python to make the title() method act on the
-            variable name . Every method is followed by a set of parentheses, because
-            methods often need additional information to do their work. That
-            information is provided inside the parentheses. The title() function doesn’t
-            need any additional information, so its parentheses are empty.</p>
-
-            <p>The title() method changes each word to title case, where each word
-            begins with a capital letter. This is useful because you’ll often want to think
-            of a name as a piece of information. For example, you might want your
-            program to recognize the input values Ada , ADA , and ada as the same name, and
-            display all of them as Ada .</p>
-
-            <p>Several other useful methods are available for dealing with case as well.
-            For example, you can change a string to all uppercase or all lowercase letters
-            like this:</p>
-
-            <code>
-                    name = "Ada Lovelace"<br>
-                    print(name.upper())<br>
-                    print(name.lower())
-            </code>
-
-            <p>This will display the following:</p>
-            <code>
-                    ADA LOVELACE<br>
-                    ada lovelace
-            </code>
-
-            <p>The lower() method is particularly useful for storing data. Many times you
-            won’t want to trust the capitalization that your users provide, so you’ll
-            convert strings to lowercase before storing them. Then when you want to
-            display the information, you’ll use the case that makes the most sense for
-            each string.</p>
-        </section>
-
-        <section class="main-section" id="Using_Variables_in_Strings">
-            <header><h2>Using Variables in Strings</h2></header>
-
-            <p>In some situations, you’ll want to use a variable’s value inside a string. For
-            example, you might want two variables to represent a first name and a last
-            name respectively, and then want to combine those values to displaysomeone’s full name:</p>
-
-            <code>
-                    &nbsp;first_name = "ada"<br>
-                    &nbsp;last_name = "lovelace"<br>
-                    ➊full_name = f"{first_name} {last_name}"<br>
-                    &nbsp;print(full_name)
-            </code>
-
-            <p>To insert a variable’s value into a string, place the letter f immediately
-            before the opening quotation mark ➊. Put braces around the name or names
-            of any variable you want to use inside the string. Python will replace each
-            variable with its value when the string is displayed.</p>
-
-            <p>These strings are called f-strings. The f is for format, because Python
-            formats the string by replacing the name of any variable in braces with its
-            value. The output from the previous code is:</p>
-
-            <code>
-                ada lovelace
-            </code>
-        </section>
-
-        <section class="main-section" id="F_Strings">
-            <header><h2>F_Strings</h2></header>
-            <p>You can do a lot with f-strings. For example, you can use f-strings to
-            compose complete messages using the information associated with a
-            variable, as shown here:</p>
-
-            <code>
-                    &nbsp;first_name = "ada"<br>
-                    &nbsp;last_name = "lovelace"<br>
-                    &nbsp;full_name = f"{first_name} {last_name}"<br>
-                    ➊print(f"Hello, {full_name.title()}!")
-            </code>
-
-            <p>The full name is used in a sentence that greets the user ➊, and the title()
-            method changes the name to title case. This code returns a simple but nicely
-            formatted greeting:</p>
-
-            <code><pre>Hello, Ada Lovelace!</pre></code>
-
-            <p>You can also use f-strings to compose a message, and then assign the
-            entire message to a variable:</p>
-
-            <code>
-                    &nbsp;first_name = "ada"<br>
-                    &nbsp;last_name = "lovelace"<br>
-                    &nbsp;full_name = f"{first_name} {last_name}"<br>
-                    ➊message = f"Hello, {full_name.title()}!"<br>
-                    ➋print(message)
-            </code>
-
-            <p>This code displays the message Hello, Ada Lovelace! as well, but by
-            assigning the message to a variable ➊ we make the final print() call much
-            simpler ➋.</p>
-        </section>
-
-        <section class="main-section" id="White_Spaces">
-            <header><h2>White Spaces</h2></header>
-            <p>In programming, whitespace refers to any nonprinting character, such as
-            spaces, tabs, and end-of-line symbols. You can use whitespace to organize
-            your output so it’s easier for users to read.</p>
-
-            <p>To add a tab to your text, use the character combination \t as shown at ➊:</p>
-            <code>
-                    &nbsp;>>> print("Python")<br>
-                    &nbsp;Python<br>
-                    ➊>>> print("\tPython")<br>
-                    &nbsp;Python
-            </code>
-            <p>To add a newline in a string, use the character combination \n :</p>
-            <code>
-                    >>> print("Languages:\nPython\nC\nJavaScript")<br>
-                    Languages:<br>
-                    Python<br>
-                    C<br>
-                    JavaScript
-            </code>
-        </section>
-
-        <section class="main-section" id="Numbers">
-            <header><h2>Numbers</h2></header>
-            <p>Numbers are used quite often in programming to keep score in games,
-            represent data in visualizations, store information in web applications, and so
-            on. Python treats numbers in several different ways, depending on how
-            they’re being used. Let’s first look at how Python manages integers, because
-            they’re the simplest to work with.</p>
-            <h3>Integers</h3>
-            <p>You can add ( + ), subtract ( - ), multiply ( * ), and divide ( / ) integers in Python.</p>
-            <code>
-                    >>> 2 + 3<br>
-                    5<br>
-                    >>> 3 - 2<br>
-                    1<br>
-                    >>> 2 * 3<br>
-                    6<br>
-                    >>> 3 / 2<br>
-                    1.5
-            </code>
-            <p>In a terminal session, Python simply returns the result of the operation.
-                Python uses two multiplication symbols to represent exponents:</p>
-            <code>
-                    >>> 3 ** 2<br>
-                    9<br>
-                    >>> 3 ** 3<br>
-                    27<br>
-                    >>> 10 ** 6<br>
-                    1000000
-            </code>
-            <h3>Floats</h3>
-            <p>Python calls any number with a decimal point a float. This term is used in
-            most programming languages, and it refers to the fact that a decimal point
-            can appear at any position in a number. Every programming language must
-            be carefully designed to properly manage decimal numbers so numbers
-            behave appropriately no matter where the decimal point appears.</p>
-            <p>For the most part, you can use decimals without worrying about how they
-            behave. Simply enter the numbers you want to use, and Python will mostlikely do what you expect:</p>
-            
-            <code>
-                    >>> 0.1 + 0.1<br>
-                    0.2<br>
-                    >>> 0.2 + 0.2<br>
-                    0.4<br>
-                    >>> 2 * 0.1<br>
-                    0.2<br>
-                    >>> 2 * 0.2<br>
-                    0.4    
-            </code>
-            <p>But be aware that you can sometimes get an arbitrary number of decimal
-                places in your answer:</p>
-            <code>
-                    >>> 0.2 + 0.1<br>
-                    0.30000000000000004<br>
-                    >>> 3 * 0.1<br>
-                    0.30000000000000004
-            </code>
-            <p>This happens in all languages and is of little concern. Python tries to find
-                a way to represent the result as precisely as possible, which is sometimes
-                difficult given how computers have to represent numbers internally. Just
-                ignore the extra decimal places for now.</p>
-        </section>
-
-        <section class="main-section" id="Constants">
-            <header><h2>Constants</h2></header>
-            <p>A constant is like a variable whose value stays the same throughout the life of
-            a program. Python doesn’t have built-in constant types, but Python
-            programmers use all capital letters to indicate a variable should be treated as
-            a constant and never be changed:</p>
-
-            <code>MAX_CONNECTIONS = 5000</code>
-
-            <p>When you want to treat a variable as a constant in your code, make the
-            name of the variable all capital letters.</p>
-        </section>
-
-        <section class="main-section" id="Comments">
-            <header><h2>Comments</h2></header>
-            <p>Comments are an extremely useful feature in most programming languages.
-            Everything you’ve written in your programs so far is Python code. As your
-            programs become longer and more complicated, you should add notes
-            within your programs that describe your overall approach to the problem
-            you’re solving. A comment allows you to write notes in English within your
-            programs.</p>
-            
-            <p>In Python, the hash mark ( # ) indicates a comment. Anything following a
-            hash mark in your code is ignored by the Python interpreter. For example:</p>
-
-            <code>
-                    # Say hello to everyone.<br>
-                    print("Hello Python people!")
-            </code>
-
-            <p>Python ignores the first line and executes the second line.</p>
-
-            <code>Hello Python people!</code>
-        </section>
-
-        <section class="main-section" id="List">
-            <header><h2>List</h2></header>
-            <p>A list is a collection of items in a particular order. You can make a list that
-            includes the letters of the alphabet, the digits from 0–9, or the names of all
-            the people in your family. You can put anything you want into a list, and the
-            items in your list don’t have to be related in any particular way. Because a list
-            usually contains more than one element, it’s a good idea to make the name of
-            your list plural, such as letters , digits , or names .</p>
-
-            <p>In Python, square brackets ( [] ) indicate a list, and individual elements in
-            the list are separated by commas. Here’s a simple example of a list that
-            contains a few kinds of bicycles:</p>
-
-            <code>
-                    bicycles = ['trek', 'cannondale', 'redline', 'specialized']<br>
-                    print(bicycles)
-            </code>
-
-            <p>If you ask Python to print a list, Python returns its representation of the
-            list, including the square brackets:</p>
-
-            <code>['trek', 'cannondale', 'redline', 'specialized']</code>
-        </section>
-
-        <section class="main-section" id="Loops">
-            <header><h2>Loops</h2></header>
-            <h3>Looping through a List</h3>
-            <p>You’ll often want to run through all entries in a list, performing the same
-            task with each item. For example, in a game you might want to move every
-            element on the screen by the same amount, or in a list of numbers you might
-            want to perform the same statistical operation on every element. Or perhaps
-            you’ll want to display each headline from a list of articles on a website.
-            When you want to do the same action with every item in a list, you can use
-            Python’s for loop.</p>
-
-            <p>Let’s say we have a list of magicians’ names, and we want to print out
-            each name in the list. We could do this by retrieving each name from the list
-            individually, but this approach could cause several problems. For one, it
-            would be repetitive to do this with a long list of names. Also, we’d have to
-            change our code each time the list’s length changed. A for loop avoids both
-            of these issues by letting Python manage these issues internally.</p>
-
-            <p>Let’s use a for loop to print out each name in a list of magicians:</p>
-            <code>
-                    ➊ magicians = ['alice', 'david', 'carolina']<br>
-                    ➋ for magician in magicians:<br>
-                    ➌ print(magician)
-            </code>
-            <p>We begin by defining a list at ➊, just as we did in Chapter 3. At ➋, we
-            define a for loop. This line tells Python to pull a name from the list magicians ,
-            and associate it with the variable magician . At ➌ we tell Python to print the
-            name that’s just been assigned to magician . Python then repeats lines ➋ and ➌,
-            once for each name in the list. It might help to read this code as “For every
-            magician in the list of magicians, print the magician’s name.” The output is a
-            simple printout of each name in the list:</p>
-            <code>
-                    alice<br>
-                    david<br>
-                    carolina
-            </code>
-        </section>
-
-        <section class="main-section" id="Range">
-            <header><h2>Range</h2></header>
-            <p>Many reasons exist to store a set of numbers. For example, you’ll need to
-            keep track of the positions of each character in a game, and you might want
-            to keep track of a player’s high scores as well. In data visualizations, you’ll
-            almost always work with sets of numbers, such as temperatures, distances,
-            population sizes, or latitude and longitude values, among other types of
-            numerical sets.</p>
-
-            <p>Lists are ideal for storing sets of numbers, and Python provides a variety
-            of tools to help you work efficiently with lists of numbers. Once you
-            understand how to use these tools effectively, your code will work well even
-            when your lists contain millions of items.</p>
-
-            <h3>Using the range() function</h3>
-
-            <p>Python’s range() function makes it easy to generate a series of numbers. For
-            example, you can use the range() function to print a series of numbers like
-            this:</p>
-
-            <code>
-                    for value in range(1, 5):<br>
-                    &nbsp;&nbsp;&nbsp;print(value)
-            </code>
-
-            <p>Although this code looks like it should print the numbers from 1 to 5, it
-            doesn’t print the number 5:</p>
-
-            <code>
-                    1<br>
-                    2<br>
-                    3<br>
-                    4
-            </code>
-            <p>In this example,range()prints only the numbers 1 through 4. This is another result of the off-by-one behavior you’ll see often in programming languages. The range() function causes Python to start counting at the first
-            value you give it, and it stops when it reaches the second value you provide.
-            Because it stops at that second value, the output never contains the end
-            value, which would have been 5 in this case.</p>
-
-            <h3>Using range() to make a list of numbers</h3>
-
-            <p>If you want to make a list of numbers, you can convert the results of range()
-            directly into a list using the list() function. When you wrap list() around a
-            call to the range() function, the output will be a list of numbers.
-            In the example in the previous section, we simply printed out a series of
-            numbers. We can use list() to convert that same set of numbers into a list:</p>
-            <code>
-                    numbers = list(range(1, 6))<br>
-                    &nbsp;&nbsp;&nbsp;print(numbers)
-            </code>
-            <p>And this is the result:</p>
-            <code>[1, 2, 3, 4, 5]</code>
-        </section>
-
-        <section class="main-section" id="List_Comprehensions">
-            <header><h2>List Comprehensions</h2></header>
-            <p>The approach described earlier for generating the list squares consisted of
-                using three or four lines of code. A list comprehension allows you to generate
-                this same list in just one line of code. A list comprehension combines the for
-                loop and the creation of new elements into one line, and automatically
-                appends each new element.</p>
-            <p>The following example builds the same list of square numbers you saw
-                earlier but uses a list comprehension:</p>
-            <code>
-                    squares = [value**2 for value in range(1, 11)]<br>
-                    print(squares)
-            </code>
-            <p>To use this syntax, begin with a descriptive name for the list, such as
-                squares . Next, open a set of square brackets and define the expression for the
-                values you want to store in the new list. In this example the expression is
-                value**2 , which raises the value to the second power. Then, write a for loop to
-                generate the numbers you want to feed into the expression, and close the
-                square brackets. The for loop in this example is for value in range(1, 11) ,
-                which feeds the values 1 through 10 into the expression value**2 . Notice that
-                no colon is used at the end of the for statement.</p>
-            <p>The result is the same list of square numbers you saw earlier:</p>
-            <code>[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</code>
-        </section>
         
-        <section class="main-section" id="Key_Words">
-            <header><h2>Key Words</h2></header>
-            <p>The following identifiers are used as reserved words, or keywords of the language, and cannot be used as ordinary identifiers. They must be spelled exactly as written here:</p>
+        <section class="main-section" id="week1">
+            <header><h2>Week1</h2></header>
+            <div class="quiz">
+                <p>Four principles of programming you should follow.</p>
+                <button data-answer="correct">correctness</button>
+                <button data-answer="correct">precision</button>
+                <button data-answer="correct">no repeat</button>
+                <button data-answer="correct">abstraction everything</button>
+                <p class="feedback"></p>
+            </div>
 
-            <p>
-                <table id="keywords-table">
-                    <tr>
-                        <td>False</td>
-                        <td>await</td>
-                        <td>else</td>
-                        <td>import</td>
-                        <td>pass</td>
-                    </tr>
-                    <tr>
-                        <td>None</td>
-                        <td>break</td>
-                        <td>except</td>
-                        <td>in</td>
-                        <td>raise</td>
-                    </tr>
-                    <tr>
-                        <td>True</td>
-                        <td>class</td>
-                        <td>finally</td>
-                        <td>is</td>
-                        <td>return</td>
-                    </tr>
-                    <tr>
-                        <td>and</td>
-                        <td>continue</td>
-                        <td>for</td>
-                        <td>lambda</td>
-                        <td>try</td>
-                    </tr>
-                    <tr>
-                        <td>as</td>
-                        <td>def</td>
-                        <td>from</td>
-                        <td>nonlocal</td>
-                        <td>while</td>
-                    </tr>
-                    <tr>
-                        <td>assert</td>
-                        <td>del</td>
-                        <td>global</td>
-                        <td>not</td>
-                        <td>with</td>
-                    </tr>
-                    <tr>
-                        <td>asynv</td>
-                        <td>elif</td>
-                        <td>if</td>
-                        <td>or</td>
-                        <td>yield</td>
-                    </tr>
-                </table>
-            </p>
-        </section>
+            <div class="quiz">
+                <p>A program called compiler will take source code as inpyut and output?</p>
+                <button data-answer="incorrect">fat code</button>
+                <button data-answer="incorrect">uefi</button>
+                <button data-answer="correct">machine code</button>
+                <button data-answer="incorrect">encrypted code</button>
+                <p class="feedback"></p>
+            </div>
 
-        <section class="main-section" id="Operators">
-            <header><h2>Operators</h2></header>
-            <p>Below are the Operators used in python language.</p>
-            <p><table id="keywords-table">
-                <tr>
-                    <td>+</td>
-                    <td>-</td>
-                    <td>*</td>
-                    <td>**</td>
-                    <td>/</td>
-                </tr>
-                <tr>
-                    <td>//</td>
-                    <td>%</td>
-                    <td>@</td>
-                    <td>&lt;&lt;</td>
-                    <td>>></td>
-                </tr>
-                <tr>
-                    <td>&</td>
-                    <td>|</td>
-                    <td>^</td>
-                    <td>~</td>
-                    <td>!=</td>
-                </tr>
-                <tr>
-                    <td>&lt;</td>
-                    <td>></td>
-                    <td>&lt;=</td>
-                    <td>>=</td>
-                    <td>==</td>
-                </tr>
-            </table>
-        </p>
+            <div class="random-fact">
+                <p>Slow down quiz taker. Let us learn some random fact.</p>
+                <p>>abstraction is just simplying a complicated idea.</p>
+                <button data-answer="correct">Oh ok</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>Functions are just smol actions or mini programs if you will, to do something. And what them functions take in sometimes?</p>
+                <button data-answer="incorrect">divorces</button>
+                <button data-answer="incorrect">qurrels</button>
+                <button data-answer="correct">arguments</button>
+                <button data-answer="incorrect">numbers</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>Functions to print something to the screen in C is ____.</p>
+                <button data-answer="incorrect">print()</button>
+                <button data-answer="incorrect">display()</button>
+                <button data-answer="incorrect">output()</button>
+                <button data-answer="correct">printf()</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>Functions to print something to the screen in C is ____.</p>
+                <button data-answer="incorrect">print()</button>
+                <button data-answer="incorrect">display()</button>
+                <button data-answer="incorrect">output()</button>
+                <button data-answer="correct">printf()</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>Functions can have two kinds of outputs. Return values and ____.</p>
+                <button data-answer="correct">side-effects</button>
+                <button data-answer="incorrect">exceptions</button>
+                <button data-answer="incorrect">errors</button>
+                <button data-answer="incorrect">memory leaks</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>What it do?</p>
+                <code>
+                    <pre>
+int main(void)
+{
+    string answer = get_string("What's your name? ");
+    printf("hello, %s", answer);
+}
+                    </pre>
+                </code>
+                <button data-answer="correct">name you put in</button>
+                <button data-answer="incorrect">hello world</button>
+                <button data-answer="incorrect">prophecy is true</button>
+                <button data-answer="incorrect">cats > dogs</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="random-fact">
+                <p>Slow down quiz taker. Let us learn some random fact.</p>
+                <p>> \n is an example of an escape sequence, or some text that represents some other text</p>
+                <button data-answer="correct">Oh ok</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>What dat code do?</p>
+                <code>
+                    <pre>
+int main(void)
+{
+    int x = get_int("x: ");
+
+    int y = get_int("y: ");
+
+    printf("%i\n", x + y);
+}
+                    </pre>
+                </code>
+                <button data-answer="incorrect">y</button>
+                <button data-answer="incorrect">x-y</button>
+                <button data-answer="correct">x + y result</button>
+                <button data-answer="incorrect">seg_fault</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>When the code below executes the result of x/y is</p>
+                <code>
+                    <pre>
+int main(void)
+{
+    // Get numbers from user
+    int x = get_int("x: ");
+    int y = get_int("y: ");
+
+    // Divide x by y
+    float z = x / y;
+    printf("%f\n", z);
+}
+                    </pre>
+                </code>
+                <button data-answer="incorrect">floating point</button>
+                <button data-answer="incorrect">z, duh!</button>
+                <button data-answer="correct">truncated</button>
+                <button data-answer="incorrect">0</button>
+                <p class="feedback"></p>
+            </div>
         </section>
     </main>    
     
