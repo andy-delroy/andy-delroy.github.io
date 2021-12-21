@@ -1,429 +1,78 @@
-<!-- 
-
-Hello Camper!
-
-Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
-
-- The freeCodeCamp Team 
-
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizy wizzy sucky titty</title>
-    <script src="https://kit.fontawesome.com/7000b9a87e.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <script>
-        
-        document.addEventListener('DOMContentLoaded', function() {
-
-            document.querySelectorAll('button').forEach(function(button) {
-
-                var parent = button.closest('div');
-                var last_child = parent.lastElementChild;
-
-                button.onclick=function() {
-                    if (button.dataset.answer === "correct")
-                    {
-                        button.style.backgroundColor = "green";
-                        last_child.innerHTML = "<img src=\"./static/catemotional_waifu2x.png\"><p>Nice :)</p>";
-                    } else {
-                        button.style.backgroundColor = "red";
-                        last_child.innerHTML = "<img src=\"./static/pepodisappointed_waifu2x.png\"><p>what's this? amateur hour?</p>";
-                    }
-                }
-            });
-        });
-    </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oikawa Tribute</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <nav id="navbar">
-        <header><h1>Python Documentation</h1></header>
-        <div id="scroll-box">
-            <p><a href="#week0" class="nav-link">Week 0</a></p>
-            <p><a href="#week1" class="nav-link">Week 1</a></p>
-            <p><a href="#Hello_World" class="nav-link">Hello World</a></p>
-            <p><a href="#Variables" class="nav-link">Variables</a></p>
-            <p><a href="#Naming_and_Using_Variables" class="nav-link">Using Variables</a></p>
-            <p><a href="#Strings" class="nav-link">Strings</a></p>
-            <p><a href="#Using_Variables_in_Strings" class="nav-link">Variables in Strings</a></p>
-            <p><a href="#F_Strings" class="nav-link">F_strings</a></p>
-            <p><a href="#White_Spaces" class="nav-link">White Spaces</a></p>
-            <p><a href="#Numbers" class="nav-link">Numbers</a></p>
-            <p><a href="#Constants" class="nav-link">Constants</a></p>
-            <p><a href="#Comments" class="nav-link">Comments</a></p>
-            <p><a href="#List" class="nav-link">List</a></p>
-            <p><a href="#Loops" class="nav-link">Loops</a></p>
-            <p><a href="#Range" class="nav-link">Range</a></p>
-            <p><a href="#List_Comprehensions" class="nav-link">List Comprehensions</a></p>
-            <p><a href="#Key_Words" class="nav-link">Keywords</a></p>
-            <p><a href="#Operators" class="nav-link">Operators</a></p>
-        </div>
-    </nav>
-    <main id="main-doc">
-        <!-- contains the pages main content (technical documentation) -->
-        <section class="main-section" id="week0">
-            <header><h2>Week0</h2></header>
-            
-            <div class="quiz">
-                <p>Running time of Linear Search in WCS</p>
-                <button data-answer="correct">O(n)</button>
-                <button data-answer="incorrect">O(log n)</button>
-                <button data-answer="incorrect">O(1)</button>
-                <button data-answer="incorrect">O(nlogn)</button>
-                <p class="feedback"></p>
-            </div>
-            
-            <div class="quiz">
-                <p>How much memory is allocated to represent a boolean value in computers</p>
-                <button data-answer="incorrect">1 bit</button>
-                <button data-answer="incorrect">3 bit</button>
-                <button data-answer="correct">1 byte</button>
-                <button data-answer="incorrect">50 GB</button>
-                <p class="feedback"></p>
-            </div>
-            
-            <div class="quiz">
-                <p>How many girlfriends have you had till now?</p>
-                <button data-answer="incorrect">1</button>
-                <button data-answer="incorrect">3</button>
-                <button data-answer="incorrect">5</button>
-                <button data-answer="correct">0</button>
-                <p class="feedback"></p>
-            </div>
-            <div class="quiz">
-                <p>Length of your peen</p>
-                <button data-answer="incorrect">6 inch</button>
-                <button data-answer="correct">innie</button>
-                <button data-answer="incorrect">3 inch</button>
-                <button data-answer="incorrect">6 1/2 inch</button>
-                <p class="feedback"></p>
-            </div>
+  <main id="main">
+    <h1 id="title">Tohru Oikawa</h1>
+    <h2>The way of the ordinary</h2>
+    <figure id="img-div">
+      <img src="https://64.media.tumblr.com/e734bccc888c28c5f9211105de875901/4f108ef9470bd3ab-0b/s1280x1920/bb4a86c2b1461d8412ec0590685012167a15975e.png" alt="Tohru Oikawa" id="image">
+      <figcaption id="img-caption">Tohru Oikawa, Highschool Third Year, Captain of Aoba Johsai Volleyball Team</figcaption>
+    </figure>
 
-            <div class="quiz">
-                <p>Zeros and Ones are otherwise known as (if you don't know this by now I mean...)</p>
-                <button data-answer="incorrect">bats </button>
-                <button data-answer="incorrect">bitches </button>
-                <button data-answer="correct">bits</button>
-                <button data-answer="incorrect">butter</button>
-                <p class="feedback"></p>
-            </div>
+    <!-- tribute info -->
+    <section id="tribute-info">
+      <div class="panel order2">
+        <p class="panel-description">
+          Haikyuu is a Japanese sports manga and animated series featuring Volleyball. It is undoubtly one of the greatest stories ever written with dynamic and fluid characters and their developments and appreciates Volleyball greatly.
+        </p>
+        <img src="https://cdn.technadu.com/wp-content/uploads/2021/08/Haikyuu-watch-order.jpg" alt="Karasuno High School Volleyball Team" class="panel-img">
+      </div>
+      <div class="panel order1">
+        <p class="panel-description">In the anime, Tohru Oikawa(back no.1) is the captain of Aoba Johsai Volleyball Team and well respected by his teammates.
+        </p>
+        <img src="https://bn1304files.storage.live.com/y4pKskMpMLWhOV7Uu8POYtF5gTukszyhOWErCq0eHjhi4vxiWvbfhYxMK-BDvJ9t2a9Qs-7wvYfq5nUH4IcMiiwkEFDmHlFe87P4wPnLA7TcwpTfZWjgsjxnl-2Qrl-SkQXInmR4uPPGfM6bFbYcGv4Avuggg4CV6oZ2zEXsPaXbSMWjv3qoOITRUtLsgz5Pv64cc9_gKK9ypsC44W3iIcYcRJ4NqKvzKdiZjwfpkVVGxE/Aobajohsaibackturned.png?psid=1&width=999&height=563" alt="Aoba Johsai Volleyball Team" class="panel-img">
+      </div>
+      <div class="panel order2">
+        <p class="panel-description">Tohru's role in his team is a setter which is a position where he toss to the spikers the ball for them to score points. </p>
+        <img src="https://bn1304files.storage.live.com/y4po5sibDkx2dqVzKFTrZ7gg-omguGbXrfflksbX-H7IagODmfkj6iPt4FIgW1AH-qE8BcMxIgRRASmjbu6SOK0XFisEvWXGrjq6my6jD2f0Uks2wvsdauQviVWIA-gLScGGONVuol-Nmucer3Fip3bSfdhUv3SQYcMcPLXDTj0gVivscFvoBS9tk2DKrhuB_Q0blU3wijwrAJcI_mk_r14X1mT3la7qcgKkMlBfOTHc-M/Oikawasetter.png?psid=1&width=1042&height=563" alt="Tohru Oikawa sets" class="panel-img">
+      </div>
+      <div class="panel order1">
+        <p class="panel-description">He is skilled, competent, observant of his teammates's abilities and can push them to 100% of their potential on the court.</p>
+        <img src="https://pbs.twimg.com/media/EW6CqFfU8AARJu-.jpg" alt="Aoba Johsai Team" class="panel-img">
+      </div>
+      <div class="panel order2">
+        <p class="panel-description">
+          At first glance, Tohru Oikawa seems brimming with talent due to his incredible plays and leadership skills. However, there is a deepr plot here. 
+        </p>
+        <img src="https://otakukart.com/wp-content/uploads/2021/02/PicsArt_02-26-05.12.32.jpg" alt="" class="panel-img">
+      </div>
+      <div class="panel order1">
+        <p class="panel-description">There was a time in middle school where Tohru was jealous of his junior.</p>
+        <img src="https://bn1304files.storage.live.com/y4pYmErrDUtXj0hBPxqDIX8AiHFKmMQaG2ZwKU-RTJmcFoSGj8UmHopNP77nHXwNSM3yw90dTh6pZAuEBPevEufZ2rGXk_5knGifoH-11UKEB6Ik3Lv--cs7rkaQ2SMVm8hSdjS5Whu6B0dQu6H7Ttj5xucvCk2rGBupkakDLnH6gz05IQ45y5ayApgRywYkezQD0WFX996wmc8XGd4eFm4GEJMoFhHfq-jCBkJl21XNkQ/OikawaIwaizumiKageyama.jpg?psid=1&width=907&height=563" class="panel-img">
+      </div>
+      <div class="panel order2">
+        <p class="panel-description">Tohru Oikawa was a very skilled player even in middle school. However, this new comer, his underclassman, Tobio Kageyama was someone one would consider a prodigy, a genius.</p>
+        <img src="https://bn1304files.storage.live.com/y4pJ7UwCEZk2nMEd97u9fffmx1OkRWWWJ7U9yz4kac09BFyywHDQHR5sbRcH0G59Slew7SgYKJWQPkmHYa2hjh1LBhKlM7lhS1iTUpjdKSGzy2U-mnCUwr8Oc-c41eV6jRe0sX3a3oabDWt4FXcddFZk0Y7_-INV8ubyqg54ifolXRwIBhFrgBRbSXokbIxzUMPemsDcDNKyUX9wyRUEdXYIDOG7MYyqWLpR2la5MJ1_v0/Kageyama_s4-e23-1.png?psid=1&width=1004&height=563" alt="Kageyama Tobio" class="panel-img">
+      </div>
+      <div class="panel order1">
+        <p class="panel-description">Since Tohru obtained his skillfulness in Volleyball through hard work and dedication, witnessing what talent can achieve first hand devastated him.</p>
+        <img src="https://bn1304files.storage.live.com/y4plfC0SkcBSpIL-dLShXT1zOFop7Qwu0SIlJBtmd5GZ-xW-jewwPc3n4NgxnoVP9PnynQt0qrVmiZoGp2ONAtKv1bpqqrutQJYR3MZzbk04tsm7VMa6-4L59jDQtrauqj8LVDVJ18YAhjCahtxYDzh9r3FAIAsoB6D9tSG3mLvsnJzVJbGSLdDTwT-Bk3yRhjGJIHYo8pYreXbZmHJwf6Kx1qXCn3NsbHi4jNQZqnyIrE/Haikyuu-19_04.jpg?psid=1&width=999&height=563" alt="Focused Tohru Oikawa" class="panel-img">
+      </div>
+      <div class="panel order2">
+        <p class="panel-description">Even though he had his moments of weakness he refuses to drown in his misery and worked even harder than before. He achieved best setter of the year in his third year middle school and also went on to win multiple matches till his third year in high school.</p>
+        <img src="https://commandermardukashome.files.wordpress.com/2020/05/hq18.jpg?w=540" alt="Oikawa and Iiwaizumi" class="panel-img">
+      </div>
+    </section>
 
-            <div class="quiz">
-                <p>Highest decimal value you can count with 4 digits in a binary system.</p>
-                <button data-answer="incorrect">7</button>
-                <button data-answer="correct">15</button>
-                <button data-answer="incorrect">3</button>
-                <button data-answer="incorrect">10</button>
-                <p class="feedback"></p>
-            </div>
+    <section id="conclusion">
+      <p id="conclusion-description">Even Though Tohru Oikawa was just a supporting character of the story, I relate to him personally more than the protagonists. Because, growing up, I also didn't have any sort of special talents. I had to work hard for my achievements. So the portrayl of Tohru Oikawa really hit home. And it gives me courage and strength that no matter what difficult tasks life throws my way and it will, I will overcome them with what I have in the best way I can.</p>
+      <div>
+        <img src="https://64.media.tumblr.com/599e6955f31cced12ba47b361d7ea19e/tumblr_o4azlzgFe91v1oed6o6_540.gifv" alt="Tohru Oikawa final match" id="conclusion-gif">
+        <p id="quote">"Talent is something you make bloom.</br>Instinct is something you polish."</p>
+        <cite>-- Tohru Oikawa</cite>
+      </div>
+    </section>
 
-            <div class="quiz">
-                <p>Inside modern computers, there are million of tiny switches that can be turned on and off to represent different values, called _____.</p>
-                <button data-answer="incorrect">something's gotta give</button>
-                <button data-answer="incorrect">megatron</button>
-                <button data-answer="incorrect">transformers</button>
-                <button data-answer="correct">transistors</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>How many combinations you can get with 3 digits in a binary system?</p>
-                <button data-answer="correct">8</button>
-                <button data-answer="incorrect">your mom</button>
-                <button data-answer="incorrect">2</button>
-                <button data-answer="incorrect">27</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>In decimal represention of number 123 where the hell's place is 2?</p>
-                <button data-answer="incorrect">your mom's</button>
-                <button data-answer="incorrect">hundred's</button>
-                <button data-answer="correct">ten's</button>
-                <button data-answer="incorrect">thousand's</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>In a binary number like 001 what place the 0 in the middle occupy</p>
-                <button data-answer="incorrect">1/16's</button>
-                <button data-answer="correct">tow's</button>
-                <button data-answer="incorrect">four's</button>
-                <button data-answer="incorrect">one's</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>What dat A map to in ASCII?</p>
-                <button data-answer="correct">google</button>
-                <button data-answer="incorrect">69(nooice)</button>
-                <button data-answer="incorrect">66</button>
-                <button data-answer="incorrect">65</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>8 bits make up to a ____.</p>
-                <button data-answer="incorrect">1 MB</button>
-                <button data-answer="incorrect">1 pizza</button>
-                <button data-answer="correct">1 byte</button>
-                <button data-answer="incorrect">1 banana</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>Computers represent letters via a sequence of __ bits which is also one byte.</p>
-                <button data-answer="incorrect">10</button>
-                <button data-answer="incorrect">5 niggas</button>
-                <button data-answer="correct">8</button>
-                <button data-answer="incorrect">80</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>How many combos you can squeeze outta 8bits(binary)?</p>
-                <button data-answer="correct">256</button>
-                <button data-answer="incorrect">420</button>
-                <button data-answer="incorrect">255</button>
-                <button data-answer="incorrect">200</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>Other characters with accent marks and symbols are represent in a standard called ____.</p>
-                <button data-answer="incorrect">FBI</button>
-                <button data-answer="incorrect">ASCII</button>
-                <button data-answer="incorrect">ATF</button>
-                <button data-answer="correct">Unicode</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>8 bits make up to a ____.</p>
-                <button data-answer="incorrect">1 MB</button>
-                <button data-answer="incorrect">1 pizza</button>
-                <button data-answer="correct">1 byte</button>
-                <button data-answer="incorrect">1 banana</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>(R,G,B) notion is used to represent each pixel of colors in computers and each color uses 8 bits just so you know.</p>
-                <button data-answer="correct">I see</button>
-                <button data-answer="correct">ok</button>
-                <button data-answer="correct">aight</button>
-                <button data-answer="correct">Fascinating</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>Music can be represented with bits, too, with mappings of numbers to notes and durations, or more complex mappings of bits to sound frequencies at each moment of time.</p>
-                <button data-answer="correct">naruhodo</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>Other characters with accent marks and symbols are represent in a standard called ____.</p>
-                <button data-answer="incorrect">FBI</button>
-                <button data-answer="incorrect">ASCII</button>
-                <button data-answer="incorrect">ATF</button>
-                <button data-answer="correct">Unicode</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>Unlike us, computer-chan can't read betwee the lines so our algorithms needs to be ____.</p>
-                <button data-answer="correct">precise</button>
-                <button data-answer="incorrect">copied</button>
-                <button data-answer="correct">unambiguous</button>
-                <button data-answer="incorrect">pretty</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>Another must have quality of algorithms is ____.</p>
-                <button data-answer="incorrect">uniqueness</button>
-                <button data-answer="incorrect">speed</button>
-                <button data-answer="incorrect">space-efficiency</button>
-                <button data-answer="correct">efficiency</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>Start out with ____ when you trynna figure out an algorithm.</p>
-                <button data-answer="incorrect">coffee</button>
-                <button data-answer="correct">pseudo code</button>
-                <button data-answer="incorrect">despair</button>
-                <button data-answer="incorrect">invoking God</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>What this code output?</p>
-                <code>
-                    <pre>
-#include &lt;stdio.h>
-
-int main(void)
-{
-    printf("goodbye, world\n");
-}
-                    </pre>
-                </code>
-                <button data-answer="incorrect">some nonsense</button>
-                <button data-answer="incorrect">hello world</button>
-                <button data-answer="incorrect">good vibes</button>
-                <button data-answer="correct">suicide</button>
-                <p class="feedback"></p>
-            </div>
-            <!-- header contains text that describes the topic of that section. isnt that just topic? -->
-        </section>
-        
-        <section class="main-section" id="week1">
-            <header><h2>Week1</h2></header>
-            <div class="quiz">
-                <p>Four principles of programming you should follow.</p>
-                <button data-answer="correct">correctness</button>
-                <button data-answer="correct">precision</button>
-                <button data-answer="correct">no repeat</button>
-                <button data-answer="correct">abstraction everything</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>A program called compiler will take source code as inpyut and output?</p>
-                <button data-answer="incorrect">fat code</button>
-                <button data-answer="incorrect">uefi</button>
-                <button data-answer="correct">machine code</button>
-                <button data-answer="incorrect">encrypted code</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="random-fact">
-                <p>Slow down quiz taker. Let us learn some random fact.</p>
-                <p>>abstraction is just simplying a complicated idea.</p>
-                <button data-answer="correct">Oh ok</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>Functions are just smol actions or mini programs if you will, to do something. And what them functions take in sometimes?</p>
-                <button data-answer="incorrect">divorces</button>
-                <button data-answer="incorrect">qurrels</button>
-                <button data-answer="correct">arguments</button>
-                <button data-answer="incorrect">numbers</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>Functions to print something to the screen in C is ____.</p>
-                <button data-answer="incorrect">print()</button>
-                <button data-answer="incorrect">display()</button>
-                <button data-answer="incorrect">output()</button>
-                <button data-answer="correct">printf()</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>Functions to print something to the screen in C is ____.</p>
-                <button data-answer="incorrect">print()</button>
-                <button data-answer="incorrect">display()</button>
-                <button data-answer="incorrect">output()</button>
-                <button data-answer="correct">printf()</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>Functions can have two kinds of outputs. Return values and ____.</p>
-                <button data-answer="correct">side-effects</button>
-                <button data-answer="incorrect">exceptions</button>
-                <button data-answer="incorrect">errors</button>
-                <button data-answer="incorrect">memory leaks</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>What it do?</p>
-                <code>
-                    <pre>
-int main(void)
-{
-    string answer = get_string("What's your name? ");
-    printf("hello, %s", answer);
-}
-                    </pre>
-                </code>
-                <button data-answer="correct">name you put in</button>
-                <button data-answer="incorrect">hello world</button>
-                <button data-answer="incorrect">prophecy is true</button>
-                <button data-answer="incorrect">cats > dogs</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="random-fact">
-                <p>Slow down quiz taker. Let us learn some random fact.</p>
-                <p>> \n is an example of an escape sequence, or some text that represents some other text</p>
-                <button data-answer="correct">Oh ok</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>What dat code do?</p>
-                <code>
-                    <pre>
-int main(void)
-{
-    int x = get_int("x: ");
-
-    int y = get_int("y: ");
-
-    printf("%i\n", x + y);
-}
-                    </pre>
-                </code>
-                <button data-answer="incorrect">y</button>
-                <button data-answer="incorrect">x-y</button>
-                <button data-answer="correct">x + y result</button>
-                <button data-answer="incorrect">seg_fault</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>When the code below executes the result of x/y is</p>
-                <code>
-                    <pre>
-int main(void)
-{
-    // Get numbers from user
-    int x = get_int("x: ");
-    int y = get_int("y: ");
-
-    // Divide x by y
-    float z = x / y;
-    printf("%f\n", z);
-}
-                    </pre>
-                </code>
-                <button data-answer="incorrect">floating point</button>
-                <button data-answer="incorrect">z, duh!</button>
-                <button data-answer="correct">truncated</button>
-                <button data-answer="incorrect">0</button>
-                <p class="feedback"></p>
-            </div>
-        </section>
-    </main>    
-    
+    <section id="link">
+      <p id="recommendation">This is arguably one of the best anime I've ever come across and I'd recommend this anime to anyone. You can <a href="https://animepahe.com/anime/4b6c889a-4548-d610-fafb-25fc5a93933f" target="_blank" id="tribute-link">watch Haikyuu here.</a><p>
+    </section>
+  </main>
 </body>
 </html>
